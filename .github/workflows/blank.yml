@@ -1,0 +1,17 @@
+create database banco_alunos;
+use banco_alunos;
+create table tab_alunos (RA INT primary key, nome VARCHAR(50));
+insert into tab_alunos (RA, nome) values ('1', 'bulbasaur');
+insert into tab_alunos (RA, nome) values ('133', 'eevee');
+insert into tab_alunos (RA, nome) values ('258', 'mudkip');
+insert into tab_alunos (RA, nome) values ('395', 'empoleon');
+insert into tab_alunos (RA, nome) values ('105', 'luxray');
+insert into tab_alunos (RA, nome) values ('471', 'glaceon');
+create table tab_professor (RP INT primary key, nome VARCHAR(50));
+insert into tab_professor (RP, nome) values ('1',' H. romeu');
+insert into tab_professor (RP, nome) values ('2',' T. Lasco');
+create table tab_materia (num_materia INT primary key, nome VARCHAR(50), RP int, RA int);
+insert into tab_materia (num_matria, nome, RP, RA) values ('1',' Web', '1', '1');
+select * from tab_alunos;
+select * from tab_professor where RP = '1';
+select nome from tab_materia;
